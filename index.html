@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ron Bachar - Porfolio</title>
+</head>
+
+<body>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+        style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+            style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Portfolio</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+                onclick="closeNav()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+            onclick="openNav()"><i class="fa fa-bars"></i></span>
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo"><b>Ron Bachar</b></h1>
+            <h3>A Fullstack Developer & Web Designer.</h3>
+            <img src="./images/hero/hero-4.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+                style="display:block;width:60%;margin:auto;">
+            <img src="./images/hero/hero-4.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+                height="1333">
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+        </header>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-32 w3-content" id="portfolio">
+            <h2 class="w3-text-grey">My Portfolio</h2>
+            <hr class="w3-opacity">
+
+            <!-- Grid for photos -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img src="./images/portfolio/wedding.jpg" style="width:100%">
+                    <img src="./images/portfolio/rocks.jpg" style="width:100%">
+                    <img src="./images/portfolio/sailboat.jpg" style="width:100%">
+                </div>
+
+                <div class="w3-half">
+                    <img src="./images/portfolio/underwater.jpg" style="width:100%">
+                    <img src="./images/portfolio/chef.jpg" style="width:100%">
+                    <img src="./images/portfolio/wedding-2.jpg" style="width:100%">
+                    <img src="./images/portfolio/printer.jpg" style="width:100%">
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Portfolio Section -->
+        </div>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+            <h2>About me</h2>
+            <hr class="w3-opacity">
+            <p>
+                Hello! My name is Ron Bachar, I am an Israel-Based freelancer.
+                if im not freelancing at some Israel's finest
+                digital agencies, i'm probably working remotely on projects for clients all over the world.
+            </p>
+            <p>
+                I carry a diverse skill set, ranging from basic HTML, CSS, and JavaScript to more complex frameworks
+                like
+                Angular and React. This expertise enables me to develop everything from simple websites to advanced
+                systems and
+                complex web applications.
+            </p>
+
+
+
+
+            <div class="w3-row w3-center  w3-section">
+                <div class="w3-third w3-section">
+                    <h3 class="w3-padding-16">Technologies</h3>
+                    <p class="w3-wide">HTML</p>
+                    <p class="w3-wide">CSS</p>
+                    <p class="w3-wide">SASS</p>
+                    <p class="w3-wide">Javascript</p>
+                    <p class="w3-wide">TypeScript</p>
+                </div>
+
+                <div class="w3-third w3-section">
+
+                    <h3 class="w3-padding-16">Libraries & Tools</h3>
+                    <p class="w3-wide">Git</p>
+                    <p class="w3-wide">NPM</p>
+                    <p class="w3-wide">Tailwind</p>
+                    <p class="w3-wide">Figma</p>
+                    <p class="w3-wide">Material Design</p>
+                </div>
+                <div class="w3-third w3-section">
+
+                    <h3 class="w3-padding-16">Frameworks</h3>
+                    <p class="w3-wide">Angular</p>
+                    <p class="w3-wide">React</p>
+                </div>
+
+
+
+            </div>
+
+
+            <br>
+
+
+
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+
+
+
+            <!-- Grid for pricing tables -->
+            <h3 class="w3-padding-16">My Price</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Landing Page Package</li>
+                        <li class="w3-padding-16">30 minutes strategic meeting</li>
+                        <li class="w3-padding-16">6-10 page section</li>
+                        <li class="w3-padding-16">Desktop & Mobile design</li>
+                        <li class="w3-padding-16">Email integration</li>
+                        <li class="w3-padding-16">Self Editing</li>
+                        <li class="w3-padding-16">Clients Testimonials Display</li>
+                        <li class="w3-padding-16">Google Analytics</li>
+                        <li class="w3-padding-16">SEO (Google Organic Search)</li>
+                        <li class="w3-padding-16">
+                            <h2>349$</h2>
+                            <span class="w3-opacity">Gift! Hosting Package (150$ worth)</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Let's Task!</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-half">
+                    <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">Portfolio Website Package</li>
+                        <li class="w3-padding-16">Custom design tailored to showcase your portfolio</li>
+                        <li class="w3-padding-16">Unlimited pages for displaying your work</li>
+                        <li class="w3-padding-16">Desktop & Mobile design</li>
+                        <li class="w3-padding-16">Email integration</li>
+
+                        <li class="w3-padding-16">Interactive gallery features</li>
+                        <li class="w3-padding-16">Google Analytics</li>
+                        <li class="w3-padding-16">SEO (Google Organic Search)</li>
+                        <li class="w3-padding-16">Responsive design for seamless viewing on all devices</li>
+                        <li class="w3-padding-16">
+                            <h2>$1499</h2>
+                            <span class="w3-opacity">Includes VAT</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Let's Task!</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Grid/Pricing tables -->
+            </div>
+
+            <!-- End About Section -->
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact Me</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Haifa, Israel</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +972 544 631 809</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ron.bachar@outlook.com</p>
+            </div>
+
+            <!-- Image of location/map -->
+            <img src="./images/contact/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+
+            <p>Lets get in touch. Send me a message:</p>
+
+            <form id="form">
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" placeholder="Name" type="text" name="from_name"
+                        id="from_name">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" placeholder="Email" type="text" name="email_id"
+                        id="email_id">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" placeholder="Subject" type="text" name="subject"
+                        id="subject">
+                </p>
+                <p>
+                    <input class="w3-input w3-padding-16 w3-border" placeholder="Message" type="text" name="message"
+                        id="message">
+                </p>
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit" id="button" value="Send Email">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+
+            </form>
+            <!-- End Contact Section -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+
+            <a href="https://instagram.com/ron.bachar/?next=%2F">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://github.com/">
+                <i class="fa fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ron-bachar/">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+            <p class="w3-medium">Made By
+                <a href="https://github.com/RonBachar" class="w3-hover-text-blue">Ron Bachar</a>
+            </p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('Si5ThGtU3xZNTu9z_')
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
